@@ -7,12 +7,16 @@ import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './not-found.component';
 import { AppRoutingModule } from './app.routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { DocumentComponent } from './document/document.component';
+import { DocumentsComponent } from './document/documents.component';
 
 @NgModule({
   declarations: [
     AppComponent
     ,PageNotFoundComponent
     ,DashboardComponent
+    ,DocumentsComponent
+    ,DocumentComponent
   ],
   imports: [
     BrowserModule
