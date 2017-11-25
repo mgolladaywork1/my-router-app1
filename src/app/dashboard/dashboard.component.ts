@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     <button>Create</button>
     <button>List Template</button>
     <button>Upload Document</button>
-
+    <button>About</button>
   `
 
 })
