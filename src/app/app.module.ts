@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app.routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DocumentComponent } from './document/document.component';
 import { DocumentsComponent } from './document/documents.component';
+import { IndividualsComponent } from './individual/individuals.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { DocumentsComponent } from './document/documents.component';
     ,DashboardComponent
     ,DocumentsComponent
     ,DocumentComponent
+    ,IndividualsComponent
   ],
   imports: [
     BrowserModule
