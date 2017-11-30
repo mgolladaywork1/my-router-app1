@@ -1,1 +1,33 @@
 <h2>This is our Router App for Document List</h2>
+<div>
+  <p>Here is a sample UrlTree:  {{tree1}}  </p>
+  <p>fragment is: {{fragment1}}</p>
+  <p>query params: {{queryParams1 | json }}</p>
+  <p>url segment group: {{url1SegmentGroup}}</p>
+  <li *ngFor="let s of url1Segment" >url segment: {{s}}
+  </li>
+  the path of urlsegment[0]: {{url1Segment[0].path}}  
+   <br/>matrix params: {{url1Segment[0].parameters | json}}
+  <br/>
+  the path of urlsegment[1]: {{url1Segment[1].path}} 
+   <br/>matrix params: {{url1Segment[1].parameters | json}}
+
+  <p>Children url segment - primary: </p>
+  <li *ngFor="let s of url1ChildrenPrimarySegment" >url segment: {{s}}
+     <br/>path: {{s.path}}
+     <br/>matrix params: {{s.parameters | json}}
+     
+    </li>
+  <p>Children url segment - secondary: </p>
+  <li *ngFor="let s of url1ChildrenSecondarySegment" >url segment: {{s}}
+     <br/>path: {{s.path}} 
+     <br/>matrix params: {{s.parameters | json}}
+    </li> 
+
+  <p>Children url seqment - third: </p>
+  <li *ngFor="let s of url1ChildrenThirdSegment" >url segment: {{s}}
+    <br/>path: {{s.path}}
+    <br/>matrix params: {{s.parameters | json}}
+  </li>  
+  
+</div>
